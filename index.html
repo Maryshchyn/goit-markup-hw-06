@@ -21,7 +21,35 @@
     <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <p></p>
+            <div class="element-modal">
+                <h2 class="element-first">Оставьте свои данные, мы вам перезвоним</h2>
+                <div class="element-center">
+                <form class="element-form">
+                    <label class="element-label">
+                        <span class="element-span">Имя</span>
+                        <input class="element-input" type="text" name="name" />
+                    </label>
+                    <label class="element-label">
+                        <span class="element-span">Телефон</span>
+                        <input class="element-input" type="tel" name="namber"  />
+                    </label>
+                    <label class="element-label">
+                        <span class="element-span">Почта</span>
+                        <input class="element-input" type="email" name="mail"  />
+                    </label>
+                    <label class="element-label">
+                        <span class="element-span">Комментарий</span>
+                        <textarea class="element-input element-input-pregunta" name="feedback"  placeholder="Введите текст "></textarea>
+                    <label class="element-checkbox" for="">
+                        <input class="" type="checkbox" name="checkbox" value="checkbox">
+                        <span class="element-span-checkbox" >Соглашаюсь с рассылкой и принимаю <span class="span-checkbox">Условия договора</span> </span>
+                    </label>    
+                    </label>
+                
+                    <button class="element-button" type="submit">Отправить</button>
+                </form>
+                </div>
+            </div>
             <div><button class="modal-button" data-modal-close><svg class="modal-button-cruze">
                 <use href="./images/icons.svg/icon.backdrop/symbol-defs.svg#close-black-18dp-2-1"></use>
             </svg></button> 
@@ -303,6 +331,7 @@
     <!-- footer -->
     
     <footer class="footer">
+        <div class="left-side">
         <div class="container column">
         <div><a class="footer-logo link" href="./index.html"><span class="web">Web</span>Studio</a>
         <address class="footer-all">
@@ -331,8 +360,23 @@
                 <a class="footerr-link" href=""><svg class="footerr-svg">
                     <use href="./images/icons.svg/icons.footer/symbol-defs.svg#linkedin"></use></a>
             </li>
-        </ul></div>
+        </ul>
         </div>
+        <div class="label-wrapper">
+            <h3 class="label-tutorial">Подпишитесь на рассылку</h3>
+            <form class="form">
+                <label class="form-label">
+                    <input class="form-input" type="email"  name="mail" placeholder="E-mail">
+                </label>
+                <button class="label-button" type="submit">Подписаться <span><svg class="label-span">
+                    <use href="./images/icons.svg/icons.label/symbol-defs.svg#icon-send"></use>
+                </svg></span></button> 
+                <span></span>
+                
+            </form>
+        </div>
+        </div>
+        
     </footer>
     <script src="./js/modal.js"></script>
 </body>
