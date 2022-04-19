@@ -741,9 +741,10 @@ img {
       border-radius: 4px;
 }
 .element-modal{
-      display: inline-block;
-      justify-content: center;
+      display: block;
       padding: 40px;
+      padding-bottom: 0;
+      border: 200px;
 }
 .element-first{
       width: 448px;
@@ -756,6 +757,7 @@ img {
       margin-bottom: 12px;
 }
 .element-span{
+      padding: 0;
       width: 25px;
       height: 14px;
       font-style: normal;
@@ -767,6 +769,9 @@ img {
       margin-bottom: 4px;
 }
 .element-input {
+      
+      padding: 0;
+      border: 0;
       width: 448px;
       height: 40px;
       font-family: inherit;
@@ -775,6 +780,7 @@ img {
       border-radius: 4px;
       margin-bottom: 10px;
 }
+
 .element-input-pregunta{
       display: inline-block;
       padding: 12px 16px;
@@ -804,9 +810,22 @@ img {
 }
 
 .element-label {
+      position: relative;
       display: flex;
       flex-direction: column;
       margin-bottom: 8px;
+}
+
+.element-svg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      z-index: 1;
+      top: 32px;
+      left: 15px;
+      width: 12px;
+      height: 12px;
 }
 .element-button{
       width: 200px;
@@ -814,17 +833,15 @@ img {
       background: var(--accent-txt);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
-      font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 30px;      
-      display: inline-block;
+      
       align-items: center;
       text-align: center;
       letter-spacing: 0.06em;
       color: var(--primary-dark-txt);
-      margin-left: 164px;
-      margin-right: 164px;
+      
       
 }
 
@@ -951,7 +968,7 @@ img {
       display: block;
       text-decoration: none;   
 }
-.slider:hover,
+
 .slider:focus{
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
       0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -963,8 +980,8 @@ img {
       cursor: pointer;
       overflow: hidden;      
 }
-.slider-dtscr,
-.slider-dtscr:focus{
+
+.slider-dtscr{
       display: flex;
       width: 100%;
       height: 100%;
@@ -993,6 +1010,7 @@ img {
 .projekts-item:hover .slider-dtscr{
       transform: translateY(0);
 }
+
 .projekts-image{
       display: block;
       max-width: 100%;
