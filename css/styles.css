@@ -742,9 +742,14 @@ img {
 }
 .element-modal{
       display: block;
-      padding: 40px;
-      padding-bottom: 0;
-      border: 200px;
+      /* margin: 40px; */
+      width: 528px;
+      height: 581px;
+}
+.element-center{
+      display: inline-block;
+      margin-left: 40px;
+      
 }
 .element-first{
       width: 448px;
@@ -755,6 +760,8 @@ img {
       letter-spacing: 0.03em;
       color: var(--primary-light-txt);
       margin-bottom: 12px;
+      margin-left: 40px;
+      margin-top: 40px;
 }
 .element-span{
       padding: 0;
@@ -790,18 +797,30 @@ img {
       
 }
 .element-checkbox{
+      
       border-color: #212121;
       margin-bottom: 30px;
+      justify-content: center;
+      align-items: center;
+      
+      
+}
+.qwe{
+      justify-content: center;
+      align-items: center;
+      margin-left: 12px;
+      width: 16px;
+      height: 15px;
+      
+      
 }
 .element-span-checkbox{
-      width: 400px;
-      height: 24px;
-      font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
       letter-spacing: 0.03em;
       color: var(--secondary-light-txt);
+      margin-bottom: 30px;
 }
 .span-checkbox{
       color: var(--accent-txt);
@@ -837,8 +856,7 @@ img {
       font-size: 16px;
       line-height: 30px;      
       
-      align-items: center;
-      text-align: center;
+      margin-left: 124px;
       letter-spacing: 0.06em;
       color: var(--primary-dark-txt);
       
