@@ -88,7 +88,11 @@ img {
       border: none;
       border-radius: 50%;
       cursor: pointer;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
 }
+
 .modal-button-cruze{
       display: inline-block;
       width: 30px;
@@ -96,8 +100,9 @@ img {
       fill: #212121;
       align-items: center;
       justify-content: center;
-      
-      
+}
+.modal-button-cruze:hover{
+      fill: var(--accent-txt);
 }
 .list{
       padding-left: 0;
@@ -742,16 +747,17 @@ img {
 }
 .element-modal{
       display: block;
-      /* margin: 40px; */
+      margin: 40px;
       width: 528px;
       height: 581px;
 }
 .element-center{
       display: inline-block;
-      margin-left: 40px;
+      
       
 }
 .element-first{
+      display: inline;
       width: 448px;
       height: 23px;
       font-weight: 700;
@@ -760,8 +766,7 @@ img {
       letter-spacing: 0.03em;
       color: var(--primary-light-txt);
       margin-bottom: 12px;
-      margin-left: 40px;
-      margin-top: 40px;
+      
 }
 .element-span{
       padding: 0;
@@ -787,6 +792,16 @@ img {
       border-radius: 4px;
       margin-bottom: 10px;
 }
+.element-hover{
+      width: 448px;
+      height: 40px;
+}
+.element-hover:hover,
+.element-hover:focus{
+      background-color: #2196F3;
+      fill: #2196F3;
+      border-radius: 4px;
+}
 
 .element-input-pregunta{
       display: inline-block;
@@ -794,7 +809,10 @@ img {
       width: 448px;
       height: 120px;
       margin-bottom: 25px;
-      
+}
+.element-input-pregunta:hover,
+.element-input-pregunta:focus{
+      border-color: #2196F3;
 }
 .element-checkbox{
       
@@ -805,7 +823,7 @@ img {
       
       
 }
-.qwe{
+.checkbox-input{
       justify-content: center;
       align-items: center;
       margin-left: 12px;
