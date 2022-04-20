@@ -21,52 +21,54 @@
     <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <div class="element-modal">
+            
                 <h2 class="element-first">Оставьте свои данные, мы вам перезвоним</h2>
-                <div class="element-center">
+                
                 <form class="element-form">
 
                     <label class="element-label">
                         
                         <span class="element-span">Имя</span>
                         
-                        <div class="element-hover"><input class="element-input" type="text" name="name" />
+                         <span class="element-hover"><input class="element-input" type="text" name="name" />
                         <svg class="element-svg">
                             <use href="./images/icons.svg/icons.modal/symbol-defs.svg#person-black-18dp-1"></use>
-                        </svg></div>
+                        </svg></span>
                     </label>
                     <label class="element-label">
                         <span class="element-span">Телефон</span>
-                        <div class="element-hover"><input class="element-input" type="tel" name="namber" />
+                        <span class="element-hover"><input class="element-input" type="tel" name="namber" />
                         <svg class="element-svg">
                             <use href="./images/icons.svg/icons.modal/symbol-defs.svg#phone-black-18dp-1"></use>
-                        </svg></div>
+                        </svg></span>
                     </label>
                     <label class="element-label">
                         <span class="element-span">Почта</span>
 
-                        <div class="element-hover"><input class="element-input" type="email" name="mail" />
+                         <span class="element-hover"><input class="element-input" type="email" name="mail" />
                         <svg class="element-svg">
                             <use href="./images/icons.svg/icons.modal/symbol-defs.svg#email-black-18dp-1"></use>
-                        </svg></div>
+                        </svg></span>
                     </label>
-                    <label class="element-label">
+                    <label class="element-label element-vidstup">
                         <span class="element-span">Комментарий</span>
                         <textarea class="element-input element-input-pregunta " name="feedback"  placeholder="Введите текст "></textarea>
-                    <label class="element-checkbox" for="">
-                        <input class="checkbox-input" type="checkbox" name="checkbox" value="checkbox">
-                        <span class="element-span-checkbox" >Соглашаюсь с рассылкой и принимаю <span class="span-checkbox">Условия договора</span> </span>
-                    </label>    
+                     
                     </label>
-                
+                    <label class="checkbox-label" for="scales">
+                        <input class="checkbox-input" type="checkbox" id="scales" name="scales">
+                        <span class="checkbox-icon"></span>
+                            <span>Соглашаюсь с рассылкой и принимаю</span>
+                            <span class="span-checkbox">Условия договора</span>
+                    </label>
                     <button class="element-button" type="submit">Отправить</button>
                 </form>
-                </div>
-            </div>
-            <div><button class="modal-button" data-modal-close><svg class="modal-button-cruze">
+                
+            
+            <button class="modal-button" data-modal-close><svg class="modal-button-cruze">
                 <use href="./images/icons.svg/icon.backdrop/symbol-defs.svg#close-black-18dp-2-1"></use>
             </svg></button> 
-        </div>
+        
             
         </div>
     </div>
@@ -346,7 +348,7 @@
     <footer class="footer">
         <div class="left-side">
         <div class="container column">
-        <div><a class="footer-logo link" href="./index.html"><span class="web">Web</span>Studio</a>
+        <div class="footer-left"><a class="footer-logo link" href="./index.html"><span class="web">Web</span>Studio</a>
         <address class="footer-all">
             <ul class="footer-list list">
                 <li class="footer-item"><a class="footer-link link" href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858">г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -383,9 +385,7 @@
                 </label>
                 <button class="label-button" type="submit">Подписаться <span><svg class="label-span">
                     <use href="./images/icons.svg/icons.label/symbol-defs.svg#icon-send"></use>
-                </svg></span></button> 
-                <span></span>
-                
+                </svg></span></button>                 
             </form>
         </div>
         </div>
